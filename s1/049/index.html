@@ -1,0 +1,1773 @@
+<div id="page-content">
+ <p>
+  <iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=1&amp;theme=https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/normalize.min.css&amp;css={$css}" style="display: none">
+  </iframe>
+ </p>
+ <p>
+  <iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=2&amp;theme=https://cdn.scpwiki.com/theme/en/black-highlighter/css/min/black-highlighter.min.css&amp;css={$css}" style="display: none">
+  </iframe>
+ </p>
+ <div>
+  <div style="display: none">
+   <div class="collapsible-block">
+    <div class="collapsible-block-folded">
+     <a class="collapsible-block-link" href="javascript:;">
+      + Show component code
+     </a>
+    </div>
+    <div class="collapsible-block-unfolded" style="display:none">
+     <div class="collapsible-block-unfolded-link">
+      <a class="collapsible-block-link" href="javascript:;">
+       - Hide component code
+      </a>
+     </div>
+     <div class="collapsible-block-content">
+      <div class="code">
+       <div class="hl-main">
+        <pre><span class="hl-var">@supports</span><span class="hl-code">(display: </span><span class="hl-identifier">grid</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    :</span><span class="hl-identifier">root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc((var(--base-font-size) * (</span><span class="hl-number">14</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">)) * </span><span class="hl-number">19</span><span class="hl-code">)</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    @</span><span class="hl-identifier">media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-reserved">min-width:</span><span class="hl-code"> </span><span class="hl-number">769</span><span class="hl-string">px</span><span class="hl-code">) {
+        #side-bar .close-menu {
+            display: </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> unset</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code"> </span><span class="hl-identifier">img</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+            </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-reserved">cursor:</span><span class="hl-code"> </span><span class="hl-string">pointer</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                opacity var(--sidebar-transition-timing)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">mask:</span><span class="hl-code">url("data:image/svg+xml,%</span><span class="hl-number">3</span><span class="hl-code">C%</span><span class="hl-number">3</span><span class="hl-code">Fxml version='</span><span class="hl-number">1.0</span><span class="hl-code">' encoding='utf-8'%</span><span class="hl-number">3</span><span class="hl-code">F%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">Csvg xmlns='http://www.w3.org/</span><span class="hl-number">2000</span><span class="hl-code">/svg' xmlns:xlink='http://www.w3.org/</span><span class="hl-number">1999</span><span class="hl-code">/xlink' id='Hamburger' x='</span><span class="hl-number">0</span><span class="hl-code">' y='</span><span class="hl-number">0</span><span class="hl-code">' baseProfile='tiny' overflow='</span><span class="hl-string">visible</span><span class="hl-code">' version='</span><span class="hl-number">1.2</span><span class="hl-code">' viewBox='</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">32</span><span class="hl-code"> </span><span class="hl-number">32</span><span class="hl-code">' xml:space='preserve'%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">Cpath d='M4 </span><span class="hl-number">10</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">zm24 </span><span class="hl-number">4</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">zm0 </span><span class="hl-number">8</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">z'/%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">C/svg%</span><span class="hl-number">3</span><span class="hl-code">E")</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> var(--toggle-icon-color, rgb(var(--sidebar-links-text))) !important</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask:</span><span class="hl-code"> var(--mask)</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask:</span><span class="hl-code"> var(--mask)</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-size:</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-size:</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> var(--toggle-button-bg, rgb(var(--sidebar-bg-color))) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> var(--toggle-roundness, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> var(--toggle-border-color, rgb(var(--sidebar-links-text))) var(--toggle-border-width, </span><span class="hl-number">0.25</span><span class="hl-code">rem) </span><span class="hl-string">solid</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop)*-</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                width </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-left:</span><span class="hl-code"> var(--sidebar-width-on-desktop)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> rgba(var(--swatch-menubg-black-color), </span><span class="hl-number">.3</span><span class="hl-code">) </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">99</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> ~ </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> ~ </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-var">@supports</span><span class="hl-code"> (-</span><span class="hl-identifier">moz-appearance</span><span class="hl-special">:none</span><span class="hl-code">) </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-identifier">background-attachment</span><span class="hl-special">:local</span><span class="hl-code">) </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-identifier">not</span><span class="hl-code"> (-</span><span class="hl-identifier">moz-osx-font-smoothing</span><span class="hl-special">:auto</span><span class="hl-code">)) </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code"> </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - calc(var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem)))</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-var">@supports</span><span class="hl-code"> (-</span><span class="hl-identifier">webkit-hyphens</span><span class="hl-special">:none</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                    </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                    padding-right </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                    background-color </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+                </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+                </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+                </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">visible</span><span class="hl-code">;
+                </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">visible</span><span class="hl-code">;
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">999</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                -</span><span class="hl-reserved">webkit-transition:</span><span class="hl-code"> opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+                </span><span class="hl-reserved">transition:</span><span class="hl-code"> opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">999</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">998</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-menubg-color), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+                </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-reserved">hover:</span><span class="hl-code">:-webkit-scrollbar {
+                opacity: </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:hover</span><span class="hl-code">~</span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+                </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+        }
+    }
+}</span></pre>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div style="display: none">
+  <div class="collapsible-block">
+   <div class="collapsible-block-folded">
+    <a class="collapsible-block-link" href="javascript:;">
+     + Show component code
+    </a>
+   </div>
+   <div class="collapsible-block-unfolded" style="display:none">
+    <div class="collapsible-block-unfolded-link">
+     <a class="collapsible-block-link" href="javascript:;">
+      - Hide component code
+     </a>
+    </div>
+    <div class="collapsible-block-content">
+     <div class="code">
+      <div class="hl-main">
+       <pre><span class="hl-var">@supports</span><span class="hl-code">(display: </span><span class="hl-identifier">grid</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+    :</span><span class="hl-identifier">root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">sidebar-width-on-desktop:</span><span class="hl-code"> calc((var(--base-font-size) * (</span><span class="hl-number">14</span><span class="hl-code"> / </span><span class="hl-number">15</span><span class="hl-code">)) * </span><span class="hl-number">19</span><span class="hl-code">)</span><span class="hl-code">;
+        --</span><span class="hl-reserved">body-width-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">45.75</span><span class="hl-code">rem</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+    @</span><span class="hl-identifier">media</span><span class="hl-code"> </span><span class="hl-identifier">only</span><span class="hl-code"> </span><span class="hl-identifier">screen</span><span class="hl-code"> </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-reserved">min-width:</span><span class="hl-code"> </span><span class="hl-number">769</span><span class="hl-string">px</span><span class="hl-code">) {
+        #side-bar .close-menu {
+            display: </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> unset</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code"> </span><span class="hl-identifier">img</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">color:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+            </span><span class="hl-reserved">box-sizing:</span><span class="hl-code"> border-box</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0.5</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-reserved">cursor:</span><span class="hl-code"> </span><span class="hl-string">pointer</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                opacity var(--sidebar-transition-timing)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">mask:</span><span class="hl-code">url("data:image/svg+xml,%</span><span class="hl-number">3</span><span class="hl-code">C%</span><span class="hl-number">3</span><span class="hl-code">Fxml version='</span><span class="hl-number">1.0</span><span class="hl-code">' encoding='utf-8'%</span><span class="hl-number">3</span><span class="hl-code">F%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">Csvg xmlns='http://www.w3.org/</span><span class="hl-number">2000</span><span class="hl-code">/svg' xmlns:xlink='http://www.w3.org/</span><span class="hl-number">1999</span><span class="hl-code">/xlink' id='Hamburger' x='</span><span class="hl-number">0</span><span class="hl-code">' y='</span><span class="hl-number">0</span><span class="hl-code">' baseProfile='tiny' overflow='</span><span class="hl-string">visible</span><span class="hl-code">' version='</span><span class="hl-number">1.2</span><span class="hl-code">' viewBox='</span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">32</span><span class="hl-code"> </span><span class="hl-number">32</span><span class="hl-code">' xml:space='preserve'%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">Cpath d='M4 </span><span class="hl-number">10</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">zm24 </span><span class="hl-number">4</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">zm0 </span><span class="hl-number">8</span><span class="hl-code">H4c-1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">s</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">h24c1</span><span class="hl-number">.1</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">.9</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">s-</span><span class="hl-number">.9</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">-</span><span class="hl-number">2</span><span class="hl-code">z'/%</span><span class="hl-number">3</span><span class="hl-code">E%</span><span class="hl-number">3</span><span class="hl-code">C/svg%</span><span class="hl-number">3</span><span class="hl-code">E")</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> var(--toggle-icon-color, rgb(var(--sidebar-links-text))) !important</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask:</span><span class="hl-code"> var(--mask)</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask:</span><span class="hl-code"> var(--mask)</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-position:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-mask-size:</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">mask-size:</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> var(--toggle-button-bg, rgb(var(--sidebar-bg-color))) !important</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> var(--toggle-roundness, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> var(--toggle-border-color, rgb(var(--sidebar-links-text))) var(--toggle-border-width, </span><span class="hl-number">0.25</span><span class="hl-code">rem) </span><span class="hl-string">solid</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> calc(var(--sidebar-width-on-desktop)*-</span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">hidden</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.side-block</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-radius:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-left-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+            </span><span class="hl-reserved">border-right-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-string">px</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">fixed</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                width </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin-left:</span><span class="hl-code"> var(--sidebar-width-on-desktop)</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> rgba(var(--swatch-menubg-black-color), </span><span class="hl-number">.3</span><span class="hl-code">) </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">px</span><span class="hl-code"> </span><span class="hl-string">repeat</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-code">vh</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">99</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:focus-within</span><span class="hl-code"> ~ </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:has</span><span class="hl-code">(</span><span class="hl-identifier">.close-menu</span><span class="hl-special">:hover</span><span class="hl-code">))</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code"> ~ </span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-var">@supports</span><span class="hl-code"> (-</span><span class="hl-identifier">moz-appearance</span><span class="hl-special">:none</span><span class="hl-code">) </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-identifier">background-attachment</span><span class="hl-special">:local</span><span class="hl-code">) </span><span class="hl-identifier">and</span><span class="hl-code"> (</span><span class="hl-identifier">not</span><span class="hl-code"> (-</span><span class="hl-identifier">moz-osx-font-smoothing</span><span class="hl-special">:auto</span><span class="hl-code">)) </span><span class="hl-brackets">{</span><span class="hl-code"> </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code"> </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#content-wrap</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-direction:</span><span class="hl-code"> row</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vw - (</span><span class="hl-number">100</span><span class="hl-code">vw - </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">))</span><span class="hl-code">;
+            </span><span class="hl-reserved">min-height:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-code">vh - calc(var(--final-header-height-on-desktop, </span><span class="hl-number">10.125</span><span class="hl-code">rem)))</span><span class="hl-code">;
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">relative</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> </span><span class="hl-string">inherit</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#main-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">2</span><span class="hl-code">rem </span><span class="hl-number">1</span><span class="hl-code">rem</span><span class="hl-code">;
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem)</span><span class="hl-code">;
+            </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#page-content</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> min(</span><span class="hl-number">90</span><span class="hl-code">vw, var(--body-width-on-desktop, </span><span class="hl-number">45.75</span><span class="hl-code">rem))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-var">@supports</span><span class="hl-code"> (-</span><span class="hl-identifier">webkit-hyphens</span><span class="hl-special">:none</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code"> 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                    </span><span class="hl-string">left</span><span class="hl-code"> </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                    padding-right </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms,
+                    background-color </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+                </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+                </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+                </span><span class="hl-reserved">overflow-x:</span><span class="hl-code"> </span><span class="hl-string">visible</span><span class="hl-code">;
+                </span><span class="hl-reserved">overflow-y:</span><span class="hl-code"> </span><span class="hl-string">visible</span><span class="hl-code">;
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">999</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">::-</span><span class="hl-identifier">webkit-scrollbar</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                -</span><span class="hl-reserved">webkit-transition:</span><span class="hl-code"> opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+                </span><span class="hl-reserved">transition:</span><span class="hl-code"> opacity </span><span class="hl-number">500</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">) </span><span class="hl-number">100</span><span class="hl-code">ms</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">999</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">998</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-identifier">.close-menu</span><span class="hl-code">::</span><span class="hl-identifier">after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-identifier">hover</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+                </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--swatch-menubg-color), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+                </span><span class="hl-reserved">padding-right:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-code">:</span><span class="hl-reserved">hover:</span><span class="hl-code">:-webkit-scrollbar {
+                opacity: </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+            </span><span class="hl-identifier">#side-bar</span><span class="hl-special">:hover</span><span class="hl-code">~</span><span class="hl-identifier">#main-content</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+                </span><span class="hl-reserved">width:</span><span class="hl-code"> calc(</span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> - var(--sidebar-width-on-desktop))</span><span class="hl-code">;
+                </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+                </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-brackets">}</span><span class="hl-code">
+        }
+    }
+}</span></pre>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div style="display: none">
+  <hr/>
+  <div class="collapsible-block">
+   <div class="collapsible-block-folded">
+    <a class="collapsible-block-link" href="javascript:;">
+     + Show component code
+    </a>
+   </div>
+   <div class="collapsible-block-unfolded" style="display:none">
+    <div class="collapsible-block-unfolded-link">
+     <a class="collapsible-block-link" href="javascript:;">
+      - Hide component code
+     </a>
+    </div>
+    <div class="collapsible-block-content">
+     <div class="code">
+      <div class="hl-main">
+       <pre><span class="hl-special">:root</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        /</span><span class="hl-identifier">*</span><span class="hl-code"> </span><span class="hl-identifier">header</span><span class="hl-code"> </span><span class="hl-identifier">measurements</span><span class="hl-code"> </span><span class="hl-identifier">*</span><span class="hl-code">/
+        --</span><span class="hl-reserved">header-height-on-desktop:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-code">rem</span><span class="hl-code">;
+        --</span><span class="hl-reserved">header-height-on-mobile:</span><span class="hl-code"> </span><span class="hl-number">10</span><span class="hl-code">rem</span><span class="hl-code">;
+        --</span><span class="hl-reserved">header-h1-font-size:</span><span class="hl-code"> clamp(</span><span class="hl-number">2</span><span class="hl-code">rem, </span><span class="hl-number">5</span><span class="hl-code">vw, </span><span class="hl-number">2.8125</span><span class="hl-code">rem)</span><span class="hl-code">;
+        --</span><span class="hl-reserved">header-h2-font-size:</span><span class="hl-code"> clamp(</span><span class="hl-number">0.875</span><span class="hl-code">rem, </span><span class="hl-number">3</span><span class="hl-code">vw, </span><span class="hl-number">0.9375</span><span class="hl-code">rem)</span><span class="hl-code">;
+ 
+        --</span><span class="hl-reserved">logo-image:</span><span class="hl-code"> url("https://nu-scptheme.github.io/Black-Highlighter/img/logo.svg")</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">search-textbox-text-color:</span><span class="hl-code"> var(--swatch-secondary-color)</span><span class="hl-code">;
+        </span><span class="hl-reserved">background:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">content:</span><span class="hl-code"> " "</span><span class="hl-code">;
+        </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+        </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0.75</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-reserved">background-image:</span><span class="hl-code"> var(--logo-image)</span><span class="hl-code">;
+        </span><span class="hl-reserved">background-repeat:</span><span class="hl-code"> </span><span class="hl-string">no-repeat</span><span class="hl-code">;
+        </span><span class="hl-reserved">background-position:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">background-size:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code"> calc(var(--header-height-on-desktop) - </span><span class="hl-number">1.5</span><span class="hl-code">rem)</span><span class="hl-code">;
+        </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">0.8</span><span class="hl-code">;
+        </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-reserved">height:</span><span class="hl-code"> var(--header-height-on-desktop)</span><span class="hl-code">;
+        </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+        </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+        </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+        </span><span class="hl-reserved">display:</span><span class="hl-code"> flex</span><span class="hl-code">;
+        </span><span class="hl-reserved">align-items:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+        </span><span class="hl-reserved">justify-content:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">block</span><span class="hl-code">;
+        </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-title)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">  </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">color:</span><span class="hl-code"> rgb(var(--swatch-text-tertiary-color))</span><span class="hl-code">;
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> -</span><span class="hl-number">1</span><span class="hl-code">;
+        -</span><span class="hl-reserved">webkit-text-stroke:</span><span class="hl-code"> </span><span class="hl-number">0.325</span><span class="hl-code">rem rgb(var(--swatch-text-dark))</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h1</span><span class="hl-code"> </span><span class="hl-identifier">a</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">color:</span><span class="hl-code"> rgb(var(--swatch-headerh1-color))</span><span class="hl-code">;
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+        </span><span class="hl-reserved">text-transform:</span><span class="hl-code"> </span><span class="hl-string">uppercase</span><span class="hl-code">;
+        </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">margin-top:</span><span class="hl-code"> calc(var(--header-height-on-mobile)/</span><span class="hl-number">2</span><span class="hl-code"> + var(--header-h1-font-size)/</span><span class="hl-number">2</span><span class="hl-code"> - </span><span class="hl-number">2</span><span class="hl-string">em</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        --</span><span class="hl-reserved">wght:</span><span class="hl-code"> </span><span class="hl-number">600</span><span class="hl-code">;
+        </span><span class="hl-reserved">content:</span><span class="hl-code"> var(--header-subtitle)</span><span class="hl-code">;
+        </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+        </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-reserved">transform:</span><span class="hl-code"> translateY(-</span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">) translateX(-</span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+        </span><span class="hl-reserved">text-align:</span><span class="hl-code"> </span><span class="hl-string">center</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        -</span><span class="hl-reserved">webkit-text-stroke:</span><span class="hl-code"> </span><span class="hl-number">0.25</span><span class="hl-code">rem rgb(var(--swatch-text-dark))</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#header</span><span class="hl-code"> </span><span class="hl-identifier">h2</span><span class="hl-code"> </span><span class="hl-identifier">span</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">color:</span><span class="hl-code"> rgb(var(--swatch-headerh2-color))</span><span class="hl-code">;
+        </span><span class="hl-reserved">z-index:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">form</span><span class="hl-brackets">[</span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">search-top-box-form</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">color:</span><span class="hl-code"> rgba(</span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-var">@media</span><span class="hl-code"> (min-width: 36</span><span class="hl-identifier">rem</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">right:</span><span class="hl-code"> initial</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+         </span><span class="hl-identifier">#login-status</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">mask-image:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> </span><span class="hl-string">transparent</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code">:</span><span class="hl-identifier">not</span><span class="hl-code">(:</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">color:</span><span class="hl-code"> rgb(var(--login-line-divider-color))</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-user-select:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            -</span><span class="hl-reserved">moz-user-select:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            -</span><span class="hl-reserved">ms-user-select:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">user-select:</span><span class="hl-code"> initial</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">,
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code">:</span><span class="hl-identifier">not</span><span class="hl-code">(:</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">clip-path:</span><span class="hl-code">
+                    polygon( </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> )</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--login-arrow-color), </span><span class="hl-number">0</span><span class="hl-code">)</span><span class="hl-code">;
+ 
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">clip-path:</span><span class="hl-code">
+                    polygon( </span><span class="hl-number">30</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">35</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">70</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">35</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code"> )</span><span class="hl-code">;
+            --</span><span class="hl-reserved">mask-image:</span><span class="hl-code"> initial</span><span class="hl-code">;
+            </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+            </span><span class="hl-reserved">position:</span><span class="hl-code"> </span><span class="hl-string">absolute</span><span class="hl-code">;
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">left:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">width:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--login-arrow-color), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+            </span><span class="hl-reserved">clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code">:</span><span class="hl-identifier">not</span><span class="hl-code">(:</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">::</span><span class="hl-identifier">before</span><span class="hl-code">,
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code">:</span><span class="hl-identifier">not</span><span class="hl-code">(:</span><span class="hl-identifier">focus-within</span><span class="hl-code">) </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">:</span><span class="hl-reserved">hover:</span><span class="hl-code">:before {
+            --clip-path:
+                    polygon( </span><span class="hl-number">30</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">35</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">70</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">35</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code">, </span><span class="hl-number">50</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">60</span><span class="hl-string">%</span><span class="hl-code"> )</span><span class="hl-code">;
+            --</span><span class="hl-reserved">mask-image:</span><span class="hl-code"> initial</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">display:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">*</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">)</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-brackets">[</span><span class="hl-var">href</span><span class="hl-code">*=</span><span class="hl-quotes">"</span><span class="hl-string">account/messages</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">clip-path:</span><span class="hl-code">
+                    polygon(
+                        </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">,
+                        </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">
+                    )</span><span class="hl-code">;
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+            </span><span class="hl-reserved">clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">*</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-identifier">#account-topbutton</span><span class="hl-code">)</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-identifier">#account-options</span><span class="hl-code">)</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-brackets">[</span><span class="hl-var">href</span><span class="hl-code">*=</span><span class="hl-quotes">"</span><span class="hl-string">account/messages</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-identifier">#my-account</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">wght:</span><span class="hl-code"> </span><span class="hl-number">300</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#account-options</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> var(--gradient-header)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">top:</span><span class="hl-code"> </span><span class="hl-number">1.5</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">right:</span><span class="hl-code"> </span><span class="hl-number">3</span><span class="hl-string">%</span><span class="hl-code">;
+            </span><span class="hl-reserved">background:</span><span class="hl-code"> rgba(var(--search-focus-textbox-bg-color), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+         </span><span class="hl-identifier">#search-top-box</span><span class="hl-special">:focus-within</span><span class="hl-code"> ~ </span><span class="hl-identifier">#login-status</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">opacity:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                background-color </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                -webkit-clip-path </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                background-color </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                clip-path </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">transition:</span><span class="hl-code">
+                background-color </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                clip-path </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">),
+                -webkit-clip-path </span><span class="hl-number">150</span><span class="hl-code">ms cubic-bezier(</span><span class="hl-number">0.4</span><span class="hl-code">, </span><span class="hl-number">0</span><span class="hl-code">, </span><span class="hl-number">0.2</span><span class="hl-code">, </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">):</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">clip-path:</span><span class="hl-code">
+                    polygon(
+                        </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">,
+                        </span><span class="hl-number">0</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">
+                    )</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgba(var(--search-icon-bg-color, --dark-accent), </span><span class="hl-number">1</span><span class="hl-code">)</span><span class="hl-code">;
+            -</span><span class="hl-reserved">webkit-clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+            </span><span class="hl-reserved">clip-path:</span><span class="hl-code"> var(--clip-path)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">)</span><span class="hl-special">:hover</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            --</span><span class="hl-reserved">clip-path:</span><span class="hl-code">
+                    polygon(
+                        </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">,
+                        </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">,
+                        </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">100</span><span class="hl-string">%</span><span class="hl-code">
+                    )</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--search-icon-hover-bg-color))</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">form</span><span class="hl-brackets">[</span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">search-top-box-form</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--search-width)</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">form</span><span class="hl-brackets">[</span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">search-top-box-form</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">text</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">max-width:</span><span class="hl-code"> var(--search-width)</span><span class="hl-code">;
+            </span><span class="hl-reserved">padding:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code"> var(--search-height) </span><span class="hl-number">0</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-string">em</span><span class="hl-code">;
+            </span><span class="hl-reserved">outline-width:</span><span class="hl-code"> </span><span class="hl-number">0</span><span class="hl-code">;
+            </span><span class="hl-reserved">background-color:</span><span class="hl-code"> rgb(var(--search-focus-textbox-bg-color), </span><span class="hl-number">0.35</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">color:</span><span class="hl-code"> rgba(var(--search-textbox-text-color), </span><span class="hl-number">0.4</span><span class="hl-code">)</span><span class="hl-code">;
+            </span><span class="hl-reserved">cursor:</span><span class="hl-code"> </span><span class="hl-string">pointer</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">form</span><span class="hl-brackets">[</span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">search-top-box-form</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-special">:not</span><span class="hl-code">(</span><span class="hl-special">:focus-within</span><span class="hl-code">) </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">submit</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code">,
+        </span><span class="hl-identifier">#search-top-box</span><span class="hl-code"> </span><span class="hl-identifier">form</span><span class="hl-brackets">[</span><span class="hl-var">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">search-top-box-form</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-special">:focus-within</span><span class="hl-code"> </span><span class="hl-identifier">input</span><span class="hl-brackets">[</span><span class="hl-var">type</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">submit</span><span class="hl-quotes">"</span><span class="hl-brackets">]</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+            </span><span class="hl-reserved">pointer-events:</span><span class="hl-code"> </span><span class="hl-string">all</span><span class="hl-code">;
+            </span><span class="hl-reserved">border:</span><span class="hl-code"> </span><span class="hl-string">none</span><span class="hl-code">;
+        </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    }
+ 
+    </span><span class="hl-identifier">#page-title</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code">,
+    </span><span class="hl-identifier">.meta-title</span><span class="hl-code">:</span><span class="hl-special">:after</span><span class="hl-code">,
+    </span><span class="hl-identifier">#page-title</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+    </span><span class="hl-identifier">.meta-title</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">content:</span><span class="hl-code"> ""</span><span class="hl-code">;
+        </span><span class="hl-reserved">flex-grow:</span><span class="hl-code"> </span><span class="hl-number">1</span><span class="hl-code">;
+        </span><span class="hl-reserved">height:</span><span class="hl-code"> </span><span class="hl-number">0.0625</span><span class="hl-code">rem</span><span class="hl-code">;
+        </span><span class="hl-reserved">background:</span><span class="hl-code"> rgb(var(--swatch-primary))</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span><span class="hl-code">
+ 
+    </span><span class="hl-identifier">#page-title</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code">,
+    </span><span class="hl-identifier">.meta-title</span><span class="hl-code">:</span><span class="hl-special">:before</span><span class="hl-code"> </span><span class="hl-brackets">{</span><span class="hl-code">
+        </span><span class="hl-reserved">margin:</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code"> </span><span class="hl-number">1.25</span><span class="hl-code">rem </span><span class="hl-string">auto</span><span class="hl-code"> </span><span class="hl-string">auto</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span></pre>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>
+  <iframe src="//interwiki.scpwiki.com/styleFrame.html?priority=3&amp;theme=https://scp-wiki.wdfiles.com/local--code/theme%3Apenumbra-bhl/1&amp;css={$css}" style="display: none">
+  </iframe>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <div style="clear:both;">
+ </div>
+ <div class="scp-image-block block-right" style="width:400px;">
+  <img alt="SCP-049-Image-2.png" class="enlarge" src="https://scp-wiki.wdfiles.com/local--files/scp-049/SCP-049-Image-2.png" style="width:400px;"/>
+  <div class="scp-image-caption" style="width:400px;">
+   <p>
+    SCP-049
+   </p>
+  </div>
+ </div>
+ <p>
+  <strong>
+   Objekt #:
+  </strong>
+  SCP-049
+ </p>
+ <p>
+  <strong>
+   Třída Objektu:
+  </strong>
+  Euclid
+ </p>
+ <p>
+  <strong>
+   Speciální Zadržovací Procedury:
+  </strong>
+  SCP-049 je drženo uvnitř Klasické Zajišťovací Humanoidní Zadržovací Cely ve Výzkumném Sektoru-02 v Oblasti-19. SCP-049 musí být pod vlivem sedativ před jakýmikoliv pokusy o přepravu. Během přepravy, SCP-049 musí být zabezpečeno uvnitř Humanoidního Omezovacího Postroje Kategorie III (včetně zamykacího límce a rozšířeného omezení) a monitorováno ne méně než dvěma ozbrojenými strážemi.
+ </p>
+ <p>
+  Zatímco SCP-049 obecně spolupracuje s většinou zaměstnanců Nadace, výbuchy nebo náhlé změny v chování musí být řešeny se zvýšenou silou. Za žádných okolností by pracovníci neměli dojít k přímému kontaktu s SCP-049 během těchto výbuchů. V případě, že se SCP-049 stane agresivním, bylo prokázáno, že aplikace levandule (
+  <em>
+   L. multifida
+  </em>
+  ) vyvolává uklidňující účinek na SCP-049. Po uklidnění se SCP-049 zpravidla stane ochotným a vrátí se do zadržovací cely s malým odporem.
+ </p>
+ <p>
+  Aby se usnadnilo trvalé zadržení SCP-049, musí být subjektu poskytnuta mrtvola nedávno zesnulého zvířete (většinou skotu nebo jiného velkého savce) jednou za dva týdny ke studiu. Mrtvoly, které se stanou SCP-049-2 musí být odstraněny ze zadržovací cely SCP-049 a spáleny. SCP-049 již není dovoleno komunikovat s lidskými subjekty a požadavky na lidské subjekty budou odmítnuty.
+ </p>
+ <p>
+  <strong>
+   Aktualizace Dočasných Zadržovacích Procedur:
+  </strong>
+  (
+  <em>
+   Viz Dodatek 049.3
+  </em>
+  ) Podle Zadržovacího Příkazu Komise 049.S19.17.1, SCP-049 již není nadále dovoleno přímo komunikovat se zaměstnanci Nadace, ani nebudou neposkytnuty žádné další mrtvoly, které by se použilo ve svých operacích. Tenhle příkaz by měl trvat na dobu neurčitou, dokud nebude dosaženo souhlasu ohledně probíhajícího zadržení SCP-049.
+ </p>
+ <p>
+  <strong>
+   Popis:
+  </strong>
+  SCP-049 je humanoidní entita, zhruba 1.9 metru vysoká, která nese vzhled středověkého morového lékaře. Zatímco SCP-049 vypadá, že má na sobě tlusté roucho a keramickou masku používající touhle profesí, oděvy se místo místo toho zdají, že časem vyrostly z těla SCP-049
+  <sup class="footnoteref">
+   <a class="footnoteref" href="javascript:;" id="footnoteref-1" onclick="WIKIDOT.page.utils.scrollToReference('footnote-1')">
+    1
+   </a>
+  </sup>
+  , a jsou skoro nerozeznatelné od čehokoli co je pod nimi. Rentgen ukazuje, že navzdory tomu má SCP-049 humanoidní kosterní strukturu pod svou vnější vrstvou.
+ </p>
+ <p>
+  SCP-049 je schopno řeči v mnoho jazycích, ale preferuje Angličtinu nebo středověkou Francouzštinu
+  <sup class="footnoteref">
+   <a class="footnoteref" href="javascript:;" id="footnoteref-2" onclick="WIKIDOT.page.utils.scrollToReference('footnote-2')">
+    2
+   </a>
+  </sup>
+  . Zatímco SCP-049 je obecně přátelské a kooperativní s Nadačními pracovníky, může se stát podrážděným nebo občas i agresivním, pokud má pocit, že je v přítomnosti toho, co nazývá "Nákaza". Ačkoli přesná povaha této Nákazy je v současné době pro výzkumné pracovníky Nadace neznámá, zdá se, že je to otázka nesmírného zájmu SCP-049.
+ </p>
+ <p>
+  SCP-049 se stane nepřátelským proti jedincům, kteří se zdají být infikováni Nákazou, často musí být spoutáno, pokud se s nimi setká. Pokud je necháno bez dozoru, SCP-049 se tyto jedince pokusí zabít; SCP-049 je schopno zastavit všechny biologické funkce organismu přímým kontaktem s kůží. Jak se toto děje, je v současné době neznámé a pitvy obětí SCP-049 byly vždy neprůkazné. SCP-049 vyjádřilo frustraci nebo výčitky svědomí po těchto zabitích, vykazující, že udělali málo pro zabití "Nákazy", ačkoliv se obvykle bude snažit provést surovou operaci pomocí nástrojů obsažených v černé lékařské tašce, kterou u sebe po celou dobu nosí
+  <sup class="footnoteref">
+   <a class="footnoteref" href="javascript:;" id="footnoteref-3" onclick="WIKIDOT.page.utils.scrollToReference('footnote-3')">
+    3
+   </a>
+  </sup>
+  . Zatímco tyhle operace nebyly vždy "úspěšné", vetšinou vyústily ve vytvoření SCP-049-2.
+ </p>
+ <p>
+  SCP-049-2 jsou oživlé mrtvoly, které byly operovány SCP-049. Zdá se, že nemají žádné předchozí vzpomínky nebo mentální funkce, pouze základní motorické dovednosti a reakce. I když jsou obecně neaktivní a pohybují se velmi málo, mohou se stát extrémně agresivními, pokud jsou vyprovokovány, nebo jsou-li řízeny SCP-049. SCP-049-2 mají aktivní biologické funkce, i když jsou výrazně odlišné od lidské fyziologie. Přes tyto změny, SCP-049 často poznamenává, že subjekty byly "vyléčeny".
+ </p>
+ <p>
+  <strong>
+   Dodatek 049.1:
+  </strong>
+  Objev
+ </p>
+ <p>
+  SCP-049 bylo objeveno během vyšetřování neznámých zmizení ve městě Montauban v jižní Francii. Během razii v místním domě, vyšetřovatelé našli několik SCP-049-2 spolu s SCP-049. Během toho co se jednotky policie zabývali se subjekty SCP-049-2, SCP-049 bylo pozorováno jak sleduje jednotky a zapisuje si poznámky do svého deníku. Poté co byly všechny SCP-049-2 zneškodněny, SCP-049 ochotně vstoupilo do vazby Nadace.
+ </p>
+ <div class="scp-image-block block-center" style="width:700px;">
+  <img alt="SCP-049D-Image-2.png" class="fillpg" src="https://scp-wiki.wdfiles.com/local--files/scp-049/SCP-049D-Image-2.png" style="width:700px;" title="Click and hold to enlarge."/>
+  <div class="scp-image-caption" style="width:700px;">
+   <p>
+    SCP-049 při objevení.
+   </p>
+  </div>
+ </div>
+ <p>
+  Následující rozhovor provedl Dr. Raymond Hamm během počátečního vyšetřování.
+ </p>
+ <p>
+  <iframe allowtransparency="true" class="html-block-iframe" frameborder="0" src="/scp-049/html/8e52f60fe1f51880be5cf6c40ae5adc7c409c633-13923619111700741627">
+  </iframe>
+ </p>
+ <blockquote>
+  <p>
+   <strong>
+    Dotazující:
+   </strong>
+   Dr. Raymond Hamm, Oblast-85
+  </p>
+  <p>
+   <strong>
+    Dotazován:
+   </strong>
+   SCP-049
+  </p>
+  <hr/>
+  <p>
+   [ZAČÁTEK ZÁZNAMU]
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Ve francouzštině
+   </em>
+   ) Takže, jak bychom měli začít? Úvodem?
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   (
+   <em>
+    Stranou
+   </em>
+   ) Je to francouzština? Můžeme dostat překladatele-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    V angličtině
+   </em>
+   ) Královská angličtina! Není potřeba překladu, pane, mohu mluvit dost dobře.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Dobře. Moje jméno je Dr. Raymond Hamm, a já-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Ah! Doktor! Stejně smýšlející jedinec, nepochybně. Kde je vaše specializace, pane?
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Kryptobiologie, proč-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Smích
+   </em>
+   ) Lékařská osoba, jako já. Výtečně! A to jsem dostal strach, že mě unesli obyčejní pouliční výtržníci! (
+   <em>
+    Rozhlíží se po místnosti
+   </em>
+   ) Tohle místo, tedy. Tohle je vaše laboratoř? Přemýšlel jsem, jak je čisté, a s takovou malou stopou Nákazy.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Nákaza? Co tím myslíte?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Pohroma! Permské Vymírání. No tak, vy víte, ten, no… (
+   <em>
+    poklepe na spánek
+   </em>
+   ) …jak tomu říkají, ten… ten… no, to je jedno. Nákaza, ano. Za stěnami je toho hojně, víte. Mnozí podlehli, a mnoho dalších podlehne, do doby než bude vynalezen vynikající lék. (
+   <em>
+    Opře se o židli
+   </em>
+   ) Naštěstí, jsem velmi blízko. Je mou povinností toho zbavit svět. Lék Pro Konec Všech Léků!
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Když jste řekl "Permské Vymírání", mluvil jste o bubonickém moru?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Pozastaví se
+   </em>
+   ) Nevím, co to je.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Chápu. Dobře, dobře, subjekty, s nimiž se naši agenti setkali v tom domě, byli už mrtví, když jste na ně narazil, ano? A vy jste je oživil?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Hmm, podle toho jak se to vezme. Vidíte věci moc jednoduše, doktore! Rozšiřte své obzory. Život a smrt, nemoc a zdraví, to jsou amatérské termíny pro amatérské lékaře. Je tu pouze jedna nemoc, která existuje ve světě lidí, a to je Nákaza. A nic jiného! Nedělejte žádné chyby, byly velmi nemocní, všichni.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Myslíte, že jste ty lidi vyléčil?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Vskutku. Můj lék je
+   <em>
+    velmi
+   </em>
+   účinný.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Ty věci, které jsme získali, nebyly lidé.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Pozastaví se a podívá se na Dr. Hamma
+   </em>
+   ) Ano, no, není to
+   <em>
+    dokonalý
+   </em>
+   lék. Ale to přijde s časem. A dalším experimentováním! Strávil jsem celý život rozvíjením svých metod, Dr. Hamme, a strávím další celý život, když bude potřeba. Teď jsme ztratili příliš mnoho času. Je tu stále práce! Budu potřebovat vlastní laboratoř, kde mohu neomezeně pokračovat ve svém výzkumu. A asistenty, samozřejmě, i když ty si mohu poskytnout sám, časem. (
+   <em>
+    Smích
+   </em>
+   )
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Myslím, že naše organizace nebude ochotna-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Nesmysl. Všichni jsme muži vědy. Přineste si kabát a ukažte mi mé místo, doktore. (
+   <em>
+    Ukáže se špičatou holí
+   </em>
+   ) Naše práce začíná nyní!
+  </p>
+  <p>
+   [KONEC ZÁZNAMU]
+  </p>
+ </blockquote>
+ <p>
+  <em>
+   Poznámka Dotazujícího: I když je SCP-049 schopno komunikovat velmi lidským způsobem, je tu zvláštní pocit neklidu, který člověk zažívá, když je v jeho přítomnosti. Nenechte se mýlit, na této entitě je opravdu něco tajemného.
+  </em>
+ </p>
+ <p>
+  <em>
+   Kromě toho jsme zabavili špičatou tyč, kterou SCP-049 stále mávalo kolem. Zčásti z důvodu standardního konfiskačního protokolu pro majetky anomálií, a zčásti protože SCP-049 je s ní reálná hrozba. Zpočátku bylo nespokojené, ale poté, co jsme udělali dohodu, že poskytneme "testovací subjekty" (což je, nesporně, více prospěšné pro náš vlastní výzkum), s námi souhlasilo.
+  </em>
+ </p>
+ <p>
+  <strong>
+   Dodatek 049.2:
+  </strong>
+  Záznam o Pozorování
+ </p>
+ <p>
+  Během zadržení v Oblasti-19, SCP-049 strávilo značné množství času studováním a prováděním operací na rozdílných mrtvolách savců, které mu byly dodány. SCP-049 běžně strávilo několik dní prováděním operace a pak (bez ohledu na to, zda se mrtvola stala nebo nestala SCP-049-2) strávilo několik dalších dní dokumentováním svých poznatků do tlustého koženého deníku uvnitř lékařské tašky. SCP-049 se často bude snažit podělit o své poznatky se zaměstnanci Nadace.
+ </p>
+ <p>
+  Následuje záznam několika událostí, během kterých bylo SCP-049 pozorováno operující na mrtvolách savců.
+ </p>
+ <blockquote>
+  <p>
+   <strong>
+    Záznam o Pozorování 049.OL.1 SHRNUTÍ
+   </strong>
+  </p>
+  <p>
+   <strong>
+    Subjekt:
+   </strong>
+   SCP-049
+  </p>
+  <p>
+   <strong>
+    Předmluva:
+   </strong>
+   Testovací subjekt (D-85123) byl přiveden do zadržovací cely SCP-049. SCP-049 vyjádřilo upřímnou vděčnost všem členům zadržovacího a výzkumného personálu.
+  </p>
+  <p>
+   <strong>
+    Poznámky Pozorování:
+   </strong>
+   SCP-049 začalo tím, že položilo D-85123 několik běžných lékařských otázek, během toho, co si vytahovalo nástroje z tašky. Krátce po dokončení příprav, SCP-049 rychle zmenšilo vzdálenost mezi sebou a subjektem, zabitím subjektu dotekem na hrdlo. Poté, SCP-049 udělalo několik značných změn základní struktury mrtvoly subjektu, často přivádějící tekutiny z tašky do subjektu pomocí ručně poháněné pumpy a měděného potrubí.
+  </p>
+  <p>
+   Výsledné SCP-049-2 se stalo oživenou, zmatenou a uchopenou na stěnách komory s množstvím vyrobených končetin, zatímco sténala z podlouhlého otvoru v hrudní kosti. Během této doby bylo SCP-049 pozorováno, že si ve svém deníku zapisuje poznámky o instanci a upozorňuje přihlížející výzkumné pracovníky na účinnost jeho léku. Bezpečnostní pracovníci vstoupili do komory, aby přesunuli SCP-049 zpět do zadržení a byli napadeni SCP-049-2. Bezpečnostní tým zneškodnil SCP-049-2 a SCP-049 se vrátilo do zadržení bez odporu a uvedlo, že je s výsledky spokojeno.
+  </p>
+ </blockquote>
+ <blockquote>
+  <p>
+   <strong>
+    Záznam o Pozorování 049.OL.2 SHRNUTÍ
+   </strong>
+  </p>
+  <p>
+   <strong>
+    Subjekt:
+   </strong>
+   SCP-049
+  </p>
+  <p>
+   <strong>
+    Předmluva:
+   </strong>
+   SCP-049 byla poskytnuta mrtvola nedávno zemřelé kozy. SCP-049 vyjádřilo vděčnost.
+  </p>
+  <p>
+   <strong>
+    Poznámky Pozorování:
+   </strong>
+   SCP-049 operovalo na mrtvole kozy po několik dní, což nakonec vedlo k instanci SCP-049-2. SCP-049 vyjádřilo potěšení z tohoto výsledku, i když přiznalo, že "nemoc je stále ve fázi vzniku. Moje veterinární praxe je základní, ale pacient na proceduru reagoval dobře."
+  </p>
+ </blockquote>
+ <blockquote>
+  <p>
+   <strong>
+    Záznam o Pozorování 049.OL.3 SHRNUTÍ
+   </strong>
+  </p>
+  <p>
+   <strong>
+    Subjekt:
+   </strong>
+   SCP-049
+  </p>
+  <p>
+   <strong>
+    Předmluva:
+   </strong>
+   SCP-049 byla poskytnuta mrtvola nedávno zemřelého orangutana. SCP-049 vyjádřilo vděčnost, vzhledem k podobnosti mezi orangutanem a základní lidskou fyziologií.
+  </p>
+  <p>
+   <strong>
+    Poznámky Pozorování:
+   </strong>
+   SCP-049 strávilo několik dní operováním orangutana, oživováním ho několikrát . Nicméně se zdá, že SCP-049 je nespokojeno s výsledky, které zažilo, vrácením se k tvoru třikrát po svém počátečním oživením pro další práci. Poté, co nebylo schopno mrtvolu oživit pátým pokusem, SCP-049 vrátilo mrtvolu Nadaci pro spálení a uvedlo "Tolik jsem se z toho naučil, i když se obávám, že můj časný optimismus byl špatný. Nikdy jsem nepřišel k takovému… kamenu úrazu na mé cestě k léku. Další subjekty, jako byl tento, by znamenaly velký pokrok v rozvoji mého výzkumu.
+  </p>
+ </blockquote>
+ <blockquote>
+  <p>
+   <strong>
+    Záznam o Pozorování 049.OL.7 KOMPLETNÍ
+   </strong>
+  </p>
+  <p>
+   <strong>
+    Subjekt:
+   </strong>
+   SCP-049
+  </p>
+  <p>
+   <strong>
+    Předmluva:
+   </strong>
+   SCP-049 byla poskytnuta mrtvola nedávno zemřelého tura. SCP-049 vyjádřilo mírnou mrzutost, i když ji přijalo
+   <sup class="footnoteref">
+    <a class="footnoteref" href="javascript:;" id="footnoteref-4" onclick="WIKIDOT.page.utils.scrollToReference('footnote-4')">
+     4
+    </a>
+   </sup>
+   .
+  </p>
+  <p>
+   <strong>
+    Poznámky Pozorování:
+   </strong>
+   SCP-049 strávilo několik dní operováním na mrtvole tura, s přestávkami na večeři tenkých sušenek, soleného vepřového a tvrdého sýru
+   <sup class="footnoteref">
+    <a class="footnoteref" href="javascript:;" id="footnoteref-5" onclick="WIKIDOT.page.utils.scrollToReference('footnote-5')">
+     5
+    </a>
+   </sup>
+   . Počínaje nejprve balzamováním mrtvoly, SCP-049 bylo pozorováno, jak vytahuje několik dlouhých stříkaček ze své tašky, každá obsahující jinou tmavou, viskózní tekutinu. SCP-049 popsalo tyhle tekutiny jako "základní tělesné šťávy" a dodalo, že "Nákaza může přivést tělesnou nerovnováhu. V takovém případě, než začne opravdové uzdravení, je třeba umístit tyto základní tělesné šťávy do rovnováhy nebo tělo lék odmítne."
+   <sup class="footnoteref">
+    <a class="footnoteref" href="javascript:;" id="footnoteref-6" onclick="WIKIDOT.page.utils.scrollToReference('footnote-6')">
+     6
+    </a>
+   </sup>
+  </p>
+  <p>
+   Během několika dalších dní, SCP-049 strávilo značné množství času úpravou orgánů mrtvoly tura s množstvím velkých kovových nástrojů. Po osmi dnech, SCP-049 vyrobilo železnou tyč, kterou Dr. Hamm vyměnil za elektrický bodec na dobytek připojený k prodlužovací šňůře a zasáhl mrtvolu na několika místech. Tato akce zdánlivě měla za následek oživení tura, který se opět stal pohyblivým, navzdory inverzi hlavy a přeorientování končetin.
+  </p>
+ </blockquote>
+ <p>
+  <iframe allowtransparency="true" class="html-block-iframe" frameborder="0" src="/scp-049/html/7a1a7bdbfabba5f6eda24ad426225a8ba1119368-10179359111121741070">
+  </iframe>
+ </p>
+ <blockquote>
+  <p>
+   <strong>
+    Navazující Rozhovor
+   </strong>
+  </p>
+  <p>
+   [ZAČÁTEK ZÁZNAMU]
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Sledovali jsme vás pracovat po několik týdnů a upřímně si nejsem jistý, jestli chápu, co děláte. Můžete detailně popsat svůj postup?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Oh bože ne, postup je velice intenzivní část. A jak již jsem řekl vašemu asistentovi, nejpřesnější instrukce mých metod najdete tady v mých denících, kde mám kompletní záznamy mé práce
+   <sup class="footnoteref">
+    <a class="footnoteref" href="javascript:;" id="footnoteref-7" onclick="WIKIDOT.page.utils.scrollToReference('footnote-7')">
+     7
+    </a>
+   </sup>
+   .
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Rozumím. Doktore, věc se má tak, že stále nerozumíme, co se snažíte vyléčit, nebo jak měnění těchto stvoření do polo-živých, bez-myslících dronů pomáhá našemu snažení.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Nerozumíte Nákaze? Dokonce i po takové době? Doktore, je to nevýslovná hrůza, která ukázala svou pravou tvář mnohokrát předtím a ukáže ji znova. Ocitl jsem se požehnán s moudrostí a dobrými smysly pro její zničení, ale mnozí jako vy nemohou. Je to krutý rozsudek být zanechám na soucit nemoci, kterou plně nechápete.
+   <br/>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   To stále neodpovídá na moji otázku. Je váš lék vůbec nějakým lékem?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Stává se rozrušenějším
+   </em>
+   ) Je
+   <em>
+    to
+   </em>
+   lék! Můžete se smát mým snahám jestli chcete, ale nešpiňte dobré jméno vědeckého postupu, který vyvinul tuto velkou milost. To, co tu tak krátkozrace vidíte, je lepší život, než v jaký mohlo toto stvoření doufat, zasažené stejně jako u Nákazy. Tohle stvoření je nyní čisté, neschopné šířit Nákazu a bez hrůzy, kterou by jinak zažilo.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Stěží je to stvoření doktore, není to ani-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Velmi rozrušený
+   </em>
+   ) Pane,
+   <em>
+    neutahujte
+   </em>
+   si ze mě! Vy a vaši kolegové jste jako mnozí jiní, neschopní se podívat za menší překážky, abyste viděli spásu, která se odehrává před vámi. Čekáte s odstraněním shnilých trámů, dokud se na vás hala nezhroutí? Ne. Najdete je,
+   <em>
+    vytáhnete
+   </em>
+   a nahradíte je těmi nedotčenými hnilobou! A hlavně se
+   <em>
+    neposmívejte
+   </em>
+   struktuře, protože vypadá jinak. Je silná! Je bez nemoci.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Omlouvám se. Nechtěl jsem vás rozrušit. Jen se snažím porozumět.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Hluboký nádech
+   </em>
+   ) Ano, dobře, příště si všímejte toho, co říkáte, doktore. Jsem profesionál, ale i profesionálové mohou pociťovat urážku cti při kritice jejich mistrovského díla. Protentokrát vám to odpustím jako akt dobré víry mezi kolegy.
+  </p>
+  <p>
+   <strong>
+    Dr. Hamm:
+   </strong>
+   Je tu něco jiného s čím vám mohu pomoct?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Pozastaví se a podívá se od Dr. Hamma
+   </em>
+   ) Ne, to bude vše. Další testovací subjekt podle obvyklého rozvrhu. Znáte mé preference subjektů s více lidskými anatomiemi.
+  </p>
+  <p>
+   [KONEC ZÁZNAMU]
+  </p>
+  <p>
+   <strong>
+    Poznámka Účastnícího Výzkumníka:
+   </strong>
+   Zdá se, že SCP-049 skutečně chce pomáhat ostatním lidem, přestože dosud nebylo schopno poskytnout konkrétní příklad toho, před čím se nás snaží zachránit. Sledoval jsem to již několik týdnů, a přestože se zdá, že výsledky se nemění, SCP-049 nadále tvrdí, že se blíží k dokonalému léku. Domnívám se, že SCP-049 si je více vědomo reality těchto výsledků, než by si přálo, abychom si mysleli.
+  </p>
+ </blockquote>
+ <p>
+  <strong>
+   Dodatek 049.3:
+  </strong>
+  04/16/2017 Incident
+ </p>
+ <p>
+  Krátce po počátečním zadržení SCP-049, Dr. Hamm provedl několik rozhovorů se subjektem ohledně jeho anomálních vlastností, a postupem času začal zaznamenávat jeho nespokojenost se subjekty a instancemi SCP-049-2. Toto pokračovalo po dobu několika měsíců, během které SCP-049 nikdy nevykazovalo žádné agresivní chování.
+ </p>
+ <p>
+  16. dubna 2017, kdy Dr. Hamm vstoupil do testovací komory SCP-049, aby provedl další rutinní rozhovor, se SCP-049 začalo znepokojovat a zeptalo se Dr. Hamma, zda se cítí dobře. Podle protokolu, Dr. Hamm připomněl SCP-049, že rozhovor byl vyžadován, a poté se SCP-049 stalo nepřátelským a napadlo Dr. Hamma, což vyústilo v jeho zabití. Kvůli chybě v bezpečnostním protokolu, a protože Dr. Hamm neaktivoval vnitřní nouzový systém, mrtvola Dr. Hamma byla objevena až o tři hodiny později, kdy ji SCP-049 již přeměnilo v SCP-049-2.
+ </p>
+ <p>
+  V návaznosti na tento incident, SCP-049 bylo dotazováno Dr. Theronem Shermanem.
+ </p>
+ <p>
+  <iframe allowtransparency="true" class="html-block-iframe" frameborder="0" src="/scp-049/html/3c20e3480cc71b180c909c1fb45cd82404efef0d-17397638061938810445">
+  </iframe>
+ </p>
+ <blockquote>
+  <p>
+   <strong>
+    Dotazující:
+   </strong>
+   Dr. Theron Sherman, Oblast-42
+  </p>
+  <p>
+   <strong>
+    Dotazován:
+   </strong>
+   SCP-049
+  </p>
+  <hr/>
+  <p>
+   [ZAČÁTEK ZÁZNAMU]
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   Potřebuji, abyste to vysvětlil.
+  </p>
+  <p>
+   (
+   <em>
+    Žádná odezva
+   </em>
+   )
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   SCP-049 jste nucen vysvětlit své činy, a znovu vám připomínám, že neschopnost spolupracovat bude mít za následek další omezení během vašeho zadržení.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Pozastaví se
+   </em>
+   ) Moje akce není třeba vysvětlovat.
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   Zabil jste Raymonda Hamma a pak jste
+   <em>
+    ho masakroval
+   </em>
+   dokud-
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Přerušuje, rozzlobeně
+   </em>
+   ) Není mrtvý! Ne! Není… není mrtvý. On je… on je vyléčený.
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   Vyléčený? Vyléčený z čeho?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Nákazy, pane! Myslel jsem, že alespoň vy si uvědomíte, jaké je to štěstí, že jsem to zjistil před-
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   (
+   <em>
+    Přerušuje
+   </em>
+   ) Jaká nákaza? Stále mluvíte o téhle nákaze, ale ani
+   <em>
+    jednou
+   </em>
+   jste nebyl schopen správně určit tuhle "nemoc". Co jste v něm dnes viděl, co jste neviděl tolikrát předtím? Že by to stálo za jeho život?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   On… (
+   <em>
+    Pozastaví se
+   </em>
+   ) Nákaza představuje a postupuje nepředvídatelnými způsoby, a má zvláštní způsob, jak se d-dostat do nepřipravených, a… (
+   <em>
+    dýchání se stává těžším
+   </em>
+   ) nazývejte si to jak chcete, doktore. Byla to milost, kterou jsem mu udělal. Je vyléčený.
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   On je
+   <em>
+    zelenina
+   </em>
+   !
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Pozastaví se
+   </em>
+   ) Já… Já bych nečekal, že to pochopíte. Vy a váš… váš
+   <em>
+    druh
+   </em>
+   , jste znovu a znovu ukázali, že nejste muži vědy, ale muži e-emocí. Nedokážete ocenit hrůzy, které jsem viděl, těch mnoho milionů, kteří podlehli Nákaze a změnili se, kteří-
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   Váš lék stál Raye jeho život!
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Ne vážený
+   <em>
+    PANE
+   </em>
+   , Já jsem
+   <em>
+    ho zachránil!
+   </em>
+   Dovolil byste tomuto světu vklouznout zpět do, do- do zoufalství nemoci a smrti, ignorující přitom, že jsem vytvořil
+   <em>
+    zázrak
+   </em>
+   a-
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   (
+   <em>
+    Mluví přes SCP-049
+   </em>
+   ) Jaká nemoc? Jaká nákaza? Byl to zdravý muž! Byl to dobrý doktor!
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   -nabízím to volně nakaženým!
+   <em>
+    Nejste
+   </em>
+   hoden této debaty, pane. Jste krátkozraký a pošetilý. Dr. Hamm byl nemocný, a Já… (
+   <em>
+    lapá po dechu
+   </em>
+   ) Já jsem ho
+   <em>
+    vyléčil
+   </em>
+   . Já jsem jediný, kdo to může udělat. Moje práce
+   <em>
+    musí
+   </em>
+   pokračovat, je toho tolik k naučení, tolik k-
+  </p>
+  <p>
+   <strong>
+    Dr. Sherman:
+   </strong>
+   Mám toho dost. Považujte své požadavky zamítnuty. Vítejte do zadržení, nula-čtyři-devět. (
+   <em>
+    Pryč od mikrofonu
+   </em>
+   ) Skončili jsme tu.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   -ni a ostatní můžou být zachráněni! Dokonce i vy, i když si to nezasloužíte, můžete být zachráněn! Mohu je všechny zachránit! Mohu zničit tento mor, jednou provždy. Dokážu to! Jenom já! Já… Já… (
+   <em>
+    namáhavě dýchá
+   </em>
+   ) Zachránil jsem… Zachránil jsem ho… Dr. Hamma, Já… Vyléčil jsem ho… byl nemocný, Vím, že byl nemocný, Já
+   <em>
+    vím
+   </em>
+   , že byl, a Já… všichni jste nemocní, ale Já… Já vás mohu
+   <em>
+    zachránit
+   </em>
+   . Mohu vás všechny zachránit, protože Já… Já jsem lék.
+  </p>
+  <p>
+   [KONEC ZÁZNAMU]
+  </p>
+ </blockquote>
+ <p>
+  <strong>
+   Dodatek 049.4:
+  </strong>
+  Rozhovor po Incidentu
+ </p>
+ <p>
+  Následující rozhovor je výňatkem ze zprávy o incidentu SCP-049 dne 16. dubna 2017. Rozhovor vedl Dr. Elijah Itkin a konal se tři týdny po zahájení počátečního vyšetřování.
+ </p>
+ <p>
+  <iframe allowtransparency="true" class="html-block-iframe" frameborder="0" src="/scp-049/html/64ef63022322caf42b6a9882df506cedb9cc179b-15621942371618061979">
+  </iframe>
+ </p>
+ <blockquote>
+  <p>
+   <strong>
+    Datum:
+   </strong>
+   7. května 2017
+  </p>
+  <p>
+   <strong>
+    Dotazující:
+   </strong>
+   Dr. Elijah Itkin
+  </p>
+  <p>
+   <strong>
+    Dotazován:
+   </strong>
+   SCP-049
+  </p>
+  <p>
+   [ZAČÁTEK ZÁZNAMU]
+  </p>
+  <p>
+   <strong>
+    Dr. Itkin:
+   </strong>
+   SCP-049, provádíme tento rozhovor, abychom ukončili naše vyšetřování vašich akcí učiněných 16. dubna, které vyústily ve smrt zaměstnance. Máte nějaké připomínky?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Jenom se těším na den, kdy mi dovolíte pokračovat ve své práci! Strávil jsem několik posledních týdnů sestavováním svých poznámek a vytváření nové teorie, jak byla Nákaza schopna nakazit někoho takovým zákeřným způsobem, že jsem ho téměř nedokázal odhalit.
+  </p>
+  <p>
+   <strong>
+    Dr. Itkin:
+   </strong>
+   Zažili jste nějaké výčitky svědomí za své činy? Za smrt Dr. Hamma?
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Mává rukou
+   </em>
+   ) Ah, ano. No, smrt kolegy je vždy politováníhodná, ale tváří v tvář s Nákazou musíme být
+   <em>
+    rychlí
+   </em>
+   , doktore a jednat bez zaváhání.
+  </p>
+  <p>
+   <strong>
+    Dr. Itkin:
+   </strong>
+   Dr. Sherman ve svém hlášení poznamenal, že jste se během počátečního pohovoru zdál být truchlivý.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   Truch- (
+   <em>
+    Pozastaví se
+   </em>
+   ) Možná. To bych si nemyslel… Je nešťastné, že spolupracující lékař se nakazil, ale práce pokračuje. Politováníhodné tak… tak to bylo, smrt Dr. Hamma poskytla důležitý náhled. Žijící lidé jsou jediným způsobem, jak postupovat dopředu, jsem rozhodnut. Můj lék je málo užitečný na mrtvém mase a získával jsem vše co jsem mohl z vaší velkorysé nabídky mrtvol. Moje touhy směřují k pomoci těm, kteří stále trpí touto nemocí.
+  </p>
+  <p>
+   <strong>
+    Dr. Itkin:
+   </strong>
+   Obávám se, že budete zklamán.
+  </p>
+  <p>
+   <strong>
+    SCP-049:
+   </strong>
+   (
+   <em>
+    Smích
+   </em>
+   )
+   <a class="newpage" href="/going-home">
+    Ah doktore, nebyl bych si tak jistý.
+   </a>
+  </p>
+  <p>
+   [KONEC ZÁZNAMU]
+  </p>
+ </blockquote>
+ <div class="footnotes-footer">
+  <div class="title">
+   Footnotes
+  </div>
+  <div class="footnote-footer" id="footnote-1">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">
+    1
+   </a>
+   . Rukavice a šaty jsou identické s hustou kůží na kůži, zatímco maska ​​se skládá z druhu chitinu vyrůstajícího z kostí obličeje.
+  </div>
+  <div class="footnote-footer" id="footnote-2">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">
+    2
+   </a>
+   . Tvrdí, že je z Francie 15. století, i když připouští, že je "
+   <a class="newpage" href="/excerpts-from-the-medical-tragedy-of-dr-bartholomew-artz-aut">
+    velmi dobře zcestovalý
+   </a>
+   ".
+  </div>
+  <div class="footnote-footer" id="footnote-3">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-3')">
+    3
+   </a>
+   . Prostor tašky je neobvykle velký, SCP-049 bylo pozorováno, jak vytahuje objekty vetší než samotná taška k operování na zesnulých subjektech.
+  </div>
+  <div class="footnote-footer" id="footnote-4">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-4')">
+    4
+   </a>
+   . SCP-049 několikrát uvedlo svoji touhu pracovat na lidských subjektech mezi touto příležitostí a dřívějším poskytováním orangutanů, poznamenávající svoji nespokojenost, pokud nebudou poskytnuty.
+  </div>
+  <div class="footnote-footer" id="footnote-5">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-5')">
+    5
+   </a>
+   . SCP-049 vyjádřilo, že nevyžaduje jídlo, ale užívá si ho a cítí, že mu jídlo pomáhá lépe přemýšlet.
+  </div>
+  <div class="footnote-footer" id="footnote-6">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-6')">
+    6
+   </a>
+   . SCP-049 dodalo k tomuto prohlášení "Tohle je, samozřejmě, základní znalost pro
+   <a href="/death-and-the-doctors-hub">
+    praktického lékaře
+   </a>
+   . Myslel jsem, že jste se tohle naučili během svých studií!"
+  </div>
+  <div class="footnote-footer" id="footnote-7">
+   <a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-7')">
+    7
+   </a>
+   . Deníky SCP-049 nejsou psány v
+   <a class="newpage" href="/the-hanged-king-s-comedy">
+    jakémkoli známém jazyce
+   </a>
+   , pokusy lingvistů a kryptoanalytiků o dešifrování byly neúspěšné.
+  </div>
+ </div>
+</div>
