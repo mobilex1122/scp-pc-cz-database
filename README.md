@@ -1,2 +1,5 @@
 # scp-pc-cz-database
- Rewrite of cz scp wikidot pages for scp-pc
+
+Rewrite of cz scp wikidot pages for scp-pc
+
+## Contribution
